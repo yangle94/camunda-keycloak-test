@@ -26,8 +26,12 @@ dependencies {
     // https://mvnrepository.com/artifact/org.camunda.bpm.springboot/camunda-bpm-spring-boot-starter
     implementation group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter', version: '7.20.0-alpha3'
 
-    implementation group: 'org.camunda.bpm.extension', name: 'camunda-platform-7-keycloak', version: '7.20.0-alpha3'
+    // https://mvnrepository.com/artifact/org.keycloak/keycloak-admin-client
+    implementation group: 'org.keycloak', name: 'keycloak-admin-client', version: '22.0.1'
 
+//    implementation group: 'org.camunda.bpm.extension', name: 'camunda-platform-7-keycloak', version: '7.20.0-alpha3'
+
+    implementation files('./lib/camunda-platform-7-keycloak-7.20.0-SNAPSHOT.jar')
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
