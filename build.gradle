@@ -26,6 +26,8 @@ dependencies {
     // https://mvnrepository.com/artifact/org.camunda.bpm.springboot/camunda-bpm-spring-boot-starter
     implementation group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter', version: '7.20.0-alpha3'
 
+    implementation group: 'org.camunda.bpm.extension', name: 'camunda-platform-7-keycloak', version: '7.20.0-alpha3'
+
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
